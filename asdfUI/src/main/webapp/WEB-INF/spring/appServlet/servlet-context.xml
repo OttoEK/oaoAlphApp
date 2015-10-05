@@ -26,5 +26,14 @@
 
 	<context:component-scan base-package="com.oao.oaoui" />
 	
+	<beans:bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping">
+		<beans:property name="order" value="0"/>
+		<beans:property name="flowRegistry" ref="flowRegistry" />
+	</beans:bean>
+	
+	<!-- Dispatches requests mapped to flows to FlowHandler implementations -->
+	<beans:bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+		<beans:property name="flowExecutor" ref="flowExecutor"/>
+	</beans:bean>
 	
 </beans:beans>
