@@ -10,10 +10,14 @@
     </definition>
     
     <definition name="viewOrder" template="/WEB-INF/views/flows/main/standard.jsp">
-		
-		
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
     </definition>
     
+    <definition name="viewOrder2" template="/WEB-INF/views/flows/main/standard2.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />		
+    </definition>
     
 
 </tiles-definitions>

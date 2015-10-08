@@ -6,8 +6,15 @@
 
     
     <view-state id="order" view="viewOrder">
-        <transition on="confirm" to="done"/>
+        <transition on="continue" to="action"/>
+    </view-state>
+    
+    <action-state id="action">
+    	<transition to="order2"/>
+    </action-state>
+    
+    <view-state id="order2" view="viewOrder2">
+    
     </view-state>
 
-    <end-state id="done" view="externalRedirect:contextRelative:hello"/>
 </flow>
