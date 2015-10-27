@@ -3,7 +3,7 @@ package com.oao.temuco.persistance;
 import java.io.Serializable;
 /**
  * 
- * @author BBVA COMPASS.
+ * @author
  *
  * @param <T> TYPE.
  * @param <ID> ID.

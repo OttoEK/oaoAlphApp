@@ -11,7 +11,7 @@ import org.hibernate.SessionFactory;
  * The Interface GenericDao.
  *
  * @param <T> Type of entities to work with
- * @author BBVA Compass
+ * @author 
  */
 public interface GenericDao<T extends Serializable> {
 	

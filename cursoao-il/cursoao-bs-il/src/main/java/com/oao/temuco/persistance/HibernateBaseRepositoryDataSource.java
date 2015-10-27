@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
  * This class uses a deprecated repository but this is
  * used for custom repositories and will be adapted in later versions.
  * 
- * @author BBVA COMPASS
+ * @author
  * 
  */
 @Transactional(value="transactionManager")

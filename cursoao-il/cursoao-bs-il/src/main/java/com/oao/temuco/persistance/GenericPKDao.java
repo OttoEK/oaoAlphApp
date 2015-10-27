@@ -9,7 +9,7 @@ import java.io.Serializable;
  *            Type of the pk attribute for the entity
  * 
  * 
- * @author BBVA Compass 
+ * @author  
  * 
  */
 public interface GenericPKDao<T extends Serializable, ID extends Serializable> extends GenericDao<T> {

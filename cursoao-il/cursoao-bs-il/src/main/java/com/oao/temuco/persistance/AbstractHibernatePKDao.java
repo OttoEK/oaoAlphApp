@@ -5,7 +5,7 @@ import java.io.Serializable;
 import org.springframework.transaction.annotation.Transactional;
 /**
  * 
- * @author BBVA COMPASS.
+ * @author 
  *
  * @param <T>
  * @param <ID>

@@ -18,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
  * The Class AbstractHibernateDao.
  *
  * @param <T> the generic type
- * @author BBVA COMPASS.
  */
 public abstract class AbstractHibernateDao<T extends Serializable> implements GenericDao<T> {
 	
