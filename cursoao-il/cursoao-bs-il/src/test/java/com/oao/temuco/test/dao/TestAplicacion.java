@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.oao.temuco.dao.AplicacionDao;
+import com.oao.temuco.dto.AplicacionDTO;
 import com.oao.temuco.entidades.Aplicacion;
 import com.oao.temuco.servicios.AplicacionService;
 
@@ -39,8 +40,8 @@ public class TestAplicacion {
 	@Test
 	public void Test2(){
 		
-		List<Aplicacion> x =aplicacionService.listaTodo();
-		for (Aplicacion a : x){
+		List<AplicacionDTO> x =aplicacionService.listar();
+		for (AplicacionDTO a : x){
 	    System.out.println(a.getNombreAplicacion());
 		 System.out.println(a.getNombreAplicacion());
 		}
