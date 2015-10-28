@@ -1,8 +1,11 @@
-package com.oao.temuco.entidades;
+package com.oao.temuco.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;
 
+import com.oao.temuco.domain.Permiso;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -16,25 +19,25 @@ public class Aplicacion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="APLICACION_IDAPLICACION_GENERATOR", sequenceName="APLICACION_SEQ")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APLICACION_IDAPLICACION_GENERATOR")
+	@SequenceGenerator(name="APLICACION_NIDAPLICACION_GENERATOR" )
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APLICACION_NIDAPLICACION_GENERATOR")
 	@Column(name="N_ID_APLICACION")
-	private Integer idAplicacion;
+	private long nIdAplicacion;
 
 	@Column(name="B_ACTIVO")
-	private Integer activo;
+	private BigDecimal bActivo;
 
 	@Column(name="S_NOMBRE_APLICACION")
-	private String nombreAplicacion;
+	private String sNombreAplicacion;
 
 	@Column(name="S_TITULO_VENTANA")
-	private String yituloVentana;
+	private String sTituloVentana;
 
 	@Column(name="S_URL_INICIO")
-	private String urlInicio;
+	private String sUrlInicio;
 
 	@Column(name="S_VERSION_APLICACION")
-	private String versionAplicacion;
+	private String sVersionAplicacion;
 
 	//bi-directional many-to-one association to Modulo
 	@OneToMany(mappedBy="aplicacion")
@@ -47,52 +50,52 @@ public class Aplicacion implements Serializable {
 	public Aplicacion() {
 	}
 
-	public Integer getIdAplicacion() {
-		return this.idAplicacion;
+	public long getNIdAplicacion() {
+		return this.nIdAplicacion;
 	}
 
-	public void setIdAplicacion(Integer idAplicacion) {
-		this.idAplicacion = idAplicacion;
+	public void setNIdAplicacion(long nIdAplicacion) {
+		this.nIdAplicacion = nIdAplicacion;
 	}
 
-	public Integer getActivo() {
-		return this.activo;
+	public BigDecimal getBActivo() {
+		return this.bActivo;
 	}
 
-	public void setActivo(Integer activo) {
-		this.activo = activo;
+	public void setBActivo(BigDecimal bActivo) {
+		this.bActivo = bActivo;
 	}
 
-	public String getNombreAplicacion() {
-		return this.nombreAplicacion;
+	public String getSNombreAplicacion() {
+		return this.sNombreAplicacion;
 	}
 
-	public void setNombreAplicacion(String nombreAplicacion) {
-		this.nombreAplicacion = nombreAplicacion;
+	public void setSNombreAplicacion(String sNombreAplicacion) {
+		this.sNombreAplicacion = sNombreAplicacion;
 	}
 
-	public String getYituloVentana() {
-		return this.yituloVentana;
+	public String getSTituloVentana() {
+		return this.sTituloVentana;
 	}
 
-	public void setYituloVentana(String yituloVentana) {
-		this.yituloVentana = yituloVentana;
+	public void setSTituloVentana(String sTituloVentana) {
+		this.sTituloVentana = sTituloVentana;
 	}
 
-	public String getUrlInicio() {
-		return this.urlInicio;
+	public String getSUrlInicio() {
+		return this.sUrlInicio;
 	}
 
-	public void setUrlInicio(String urlInicio) {
-		this.urlInicio = urlInicio;
+	public void setSUrlInicio(String sUrlInicio) {
+		this.sUrlInicio = sUrlInicio;
 	}
 
-	public String getVersionAplicacion() {
-		return this.versionAplicacion;
+	public String getSVersionAplicacion() {
+		return this.sVersionAplicacion;
 	}
 
-	public void setVersionAplicacion(String versionAplicacion) {
-		this.versionAplicacion = versionAplicacion;
+	public void setSVersionAplicacion(String sVersionAplicacion) {
+		this.sVersionAplicacion = sVersionAplicacion;
 	}
 
 	public List<Modulo> getModulos() {

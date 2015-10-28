@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.oao.temuco.dao.AplicacionDao;
 import com.oao.temuco.dto.AplicacionDTO;
-import com.oao.temuco.entidades.Aplicacion;
+import com.oao.temuco.domain.Aplicacion;
 import com.oao.temuco.servicios.AplicacionService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -31,8 +31,8 @@ public class TestAplicacion {
 		
 		List<Aplicacion> x = aplicacionDao.findAll();
 		for (Aplicacion a : x){
-	    System.out.println(a.getNombreAplicacion());
-		 System.out.println(a.getNombreAplicacion());
+	    System.out.println(a.getNIdAplicacion());
+		 System.out.println(a.getNIdAplicacion());
 		}
 	}
 	
@@ -42,8 +42,8 @@ public class TestAplicacion {
 		
 		List<AplicacionDTO> x =aplicacionService.listar();
 		for (AplicacionDTO a : x){
-	    System.out.println(a.getNombreAplicacion());
-		 System.out.println(a.getNombreAplicacion());
+	    System.out.println(a.getsNombreAplicacion());
+		 System.out.println(a.getsNombreAplicacion());
 		}
 	}
 

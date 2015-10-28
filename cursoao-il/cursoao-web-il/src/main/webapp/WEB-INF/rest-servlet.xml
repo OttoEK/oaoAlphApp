@@ -17,11 +17,15 @@
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	<mvc:annotation-driven />
 	<context:annotation-config />
-	<context:component-scan base-package="com.oao.temuco.rest.*,com.oao.temuco.dao,com.oao.temuco.entidades,com.oao.temuco.servicios,com.oao.temuco.persistance" />
+	<context:component-scan base-package="com.oao.temuco.*" />
 	
 	 
 	
-	
+	 <bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+		<qualifier value="transactionManager"/>
+	</bean>
 
 
 	<bean id="sessionFactory"
@@ -35,10 +39,7 @@
 		</property>
 		<property name="packagesToScan">
 			<list>
-				<value>com.oao.temuco.entidades</value>
-				<value>com.oao.temuco.dao</value>
-				<value>com.oao.temuco.persistance</value>
-				<value>com.oao.temuco.servicios</value>
+				<value>com.oao.temuco.*</value>	
 			</list>
 		</property>
 	</bean>
@@ -55,11 +56,7 @@
 			<value>classpath:properties/database.properties</value>
 		</property>
 	</bean>
-  <bean id="transactionManager"
-		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-		<property name="sessionFactory" ref="sessionFactory" />
-		<qualifier value="transactionManager"/>
-	</bean>
+
 
    
    
