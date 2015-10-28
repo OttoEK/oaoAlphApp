@@ -1,6 +1,7 @@
 package com.oao.temuco.dto;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 
 
@@ -13,6 +14,8 @@ public class AplicacionDTO {
 	private String sTituloVentana;
 	private String sUrlInicio;
 	private String sVersionAplicacion;
+	private List<ModuloDTO> modulos;
+	private List<PermisoDTO> permisos;
 	
 	
 	public long getnIdAplicacion() {
@@ -50,6 +53,18 @@ public class AplicacionDTO {
 	}
 	public void setsVersionAplicacion(String sVersionAplicacion) {
 		this.sVersionAplicacion = sVersionAplicacion;
+	}
+	public List<ModuloDTO> getModulos() {
+		return modulos;
+	}
+	public void setModulos(List<ModuloDTO> modulos) {
+		this.modulos = modulos;
+	}
+	public List<PermisoDTO> getPermisos() {
+		return permisos;
+	}
+	public void setPermisos(List<PermisoDTO> permisos) {
+		this.permisos = permisos;
 	}
 
 

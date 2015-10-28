@@ -82,7 +82,6 @@ public abstract class AbstractHibernateDao<T extends Serializable> implements Ge
 	@Transactional( readOnly = true )
 	@SuppressWarnings(UNCHECKED_LITERAL)
 	public List<T> findAll() {
-		//return this.getCurrentSession().createQuery( "from " + this.clazz.getName() ).list();
 		return getCurrentSession().createCriteria(getEntityClass()).list();
 	}
 	

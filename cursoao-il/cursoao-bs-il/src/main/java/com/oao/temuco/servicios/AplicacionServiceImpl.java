@@ -32,6 +32,11 @@ public class AplicacionServiceImpl implements AplicacionService {
         return list;
 		
 	}
+
+	public AplicacionDTO obtener(Integer id) {
+		Mapper mapper = new DozerBeanMapper();
+		 return	mapper.map(applicacionDao.get(id), AplicacionDTO.class);
+	}
     
 	
 

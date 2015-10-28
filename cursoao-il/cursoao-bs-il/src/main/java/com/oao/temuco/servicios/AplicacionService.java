@@ -9,4 +9,6 @@ public interface AplicacionService {
 	
 List<AplicacionDTO> listar();
 
+AplicacionDTO obtener(Integer id);
+
 }
