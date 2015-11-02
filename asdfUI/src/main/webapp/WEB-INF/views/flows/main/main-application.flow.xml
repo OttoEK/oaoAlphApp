@@ -4,16 +4,17 @@
   xsi:schemaLocation="http://www.springframework.org/schema/webflow
   http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 	
-
+	
     
     <view-state id="order" view="viewOrder">
         <transition on="continue" to="action"/>
     </view-state>
-    
+   
     <action-state id="action">
     	<evaluate expression="mainAction.function()" />
     	<transition to="order2"/>
     </action-state>
+    
     
     <view-state id="order2" view="viewOrder2">
     

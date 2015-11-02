@@ -10,10 +10,12 @@
 
 <tiles:insertAttribute name="header"/>   
    	
-   	<form action="" method="post" id="ejemplo">
+   	<form action="${flowExecutionUrl}&_eventId=continue" method="post" id="ejemplo">
 		<label>primera vista</label>
 		<input name="input1">
 		<button type="submit">segunda vista</button>
 	</form>
 
 <tiles:insertAttribute name="footer"/>   
+        <script src="<%=request.getContextPath() %>/js/validation.js"></script>
+    
