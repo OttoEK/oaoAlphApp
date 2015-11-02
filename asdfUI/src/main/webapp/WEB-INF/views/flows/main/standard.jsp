@@ -10,12 +10,10 @@
 
 <tiles:insertAttribute name="header"/>   
    	
-   	<form:form action="${flowExecutionUrl}&eventId=continue" method="post" id="ejemplo">
-		primera vista
-		<button type="submit">
-			segunda vista
-		</button>
-		
-	</form:form>
+   	<form action="" method="post" id="ejemplo">
+		<label>primera vista</label>
+		<input name="input1">
+		<button type="submit">segunda vista</button>
+	</form>
 
 <tiles:insertAttribute name="footer"/>   
