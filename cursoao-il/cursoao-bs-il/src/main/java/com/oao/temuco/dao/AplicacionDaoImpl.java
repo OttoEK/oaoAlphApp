@@ -15,6 +15,6 @@ import com.oao.temuco.persistance.HibernateBaseRepositoryDataSource;
 @Component
 @Repository("AplicacionDao")
 @Transactional(value = "transactionManager")
-public class AplicacionDaoImpl extends HibernateBaseRepositoryDataSource<Aplicacion, Integer> implements AplicacionDao {
+public class AplicacionDaoImpl extends HibernateBaseRepositoryDataSource<Aplicacion, Long> implements AplicacionDao {
 
 }

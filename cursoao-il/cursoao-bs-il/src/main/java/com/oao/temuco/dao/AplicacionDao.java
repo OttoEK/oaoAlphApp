@@ -4,6 +4,6 @@ import com.oao.temuco.domain.Aplicacion;
 import com.oao.temuco.persistance.GenericPKDao;
 
 
-public interface AplicacionDao extends GenericPKDao<Aplicacion, Integer> {
+public interface AplicacionDao extends GenericPKDao<Aplicacion, Long> {
 
 }

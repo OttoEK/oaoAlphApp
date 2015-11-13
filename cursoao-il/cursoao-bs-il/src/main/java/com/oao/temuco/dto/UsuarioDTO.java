@@ -2,7 +2,6 @@ package com.oao.temuco.dto;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 public class UsuarioDTO {
 	
@@ -14,9 +13,11 @@ public class UsuarioDTO {
 	private String sContrasenia;
 	private String sEmail;
 	private String sNombreUsuario;
-	private List<PermisoDTO> permisos;
-	private List<PreguntaSeguridadDTO> preguntaSeguridads;
-	
+//	private List<PermisoDTO> permisos;
+//	private List<PreguntaSeguridadDTO> preguntaSeguridads;
+	public UsuarioDTO() {
+	}
+
 	public long getnIdUsuario() {
 		return nIdUsuario;
 	}
@@ -65,17 +66,17 @@ public class UsuarioDTO {
 	public void setsNombreUsuario(String sNombreUsuario) {
 		this.sNombreUsuario = sNombreUsuario;
 	}
-	public List<PermisoDTO> getPermisos() {
-		return permisos;
-	}
-	public void setPermisos(List<PermisoDTO> permisos) {
-		this.permisos = permisos;
-	}
-	public List<PreguntaSeguridadDTO> getPreguntaSeguridads() {
-		return preguntaSeguridads;
-	}
-	public void setPreguntaSeguridads(List<PreguntaSeguridadDTO> preguntaSeguridads) {
-		this.preguntaSeguridads = preguntaSeguridads;
-	}
+//	public List<PermisoDTO> getPermisos() {
+//		return permisos;
+//	}
+//	public void setPermisos(List<PermisoDTO> permisos) {
+//		this.permisos = permisos;
+//	}
+//	public List<PreguntaSeguridadDTO> getPreguntaSeguridads() {
+//		return preguntaSeguridads;
+//	}
+//	public void setPreguntaSeguridads(List<PreguntaSeguridadDTO> preguntaSeguridads) {
+//		this.preguntaSeguridads = preguntaSeguridads;
+//	}
 
 }
