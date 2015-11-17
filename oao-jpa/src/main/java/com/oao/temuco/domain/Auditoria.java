@@ -40,32 +40,32 @@ public class Auditoria implements Serializable {
 	public Auditoria() {
 	}
 
-	public long getNIdAuditoria() {
-		return this.nIdAuditoria;
+	public long getnIdAuditoria() {
+		return nIdAuditoria;
 	}
 
-	public void setNIdAuditoria(long nIdAuditoria) {
+	public void setnIdAuditoria(long nIdAuditoria) {
 		this.nIdAuditoria = nIdAuditoria;
 	}
 
-	public BigDecimal getBSesionExpirada() {
-		return this.bSesionExpirada;
+	public BigDecimal getbSesionExpirada() {
+		return bSesionExpirada;
 	}
 
-	public void setBSesionExpirada(BigDecimal bSesionExpirada) {
+	public void setbSesionExpirada(BigDecimal bSesionExpirada) {
 		this.bSesionExpirada = bSesionExpirada;
 	}
 
-	public Date getDFechaAccion() {
-		return this.dFechaAccion;
+	public Date getdFechaAccion() {
+		return dFechaAccion;
 	}
 
-	public void setDFechaAccion(Date dFechaAccion) {
+	public void setdFechaAccion(Date dFechaAccion) {
 		this.dFechaAccion = dFechaAccion;
 	}
 
 	public MensajeSistema getMensajeSistema() {
-		return this.mensajeSistema;
+		return mensajeSistema;
 	}
 
 	public void setMensajeSistema(MensajeSistema mensajeSistema) {
@@ -73,7 +73,7 @@ public class Auditoria implements Serializable {
 	}
 
 	public Permiso getPermiso() {
-		return this.permiso;
+		return permiso;
 	}
 
 	public void setPermiso(Permiso permiso) {

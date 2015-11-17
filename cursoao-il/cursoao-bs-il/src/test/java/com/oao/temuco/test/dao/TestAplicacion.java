@@ -31,8 +31,8 @@ public class TestAplicacion {
 		
 		List<Aplicacion> x = aplicacionDao.findAll();
 		for (Aplicacion a : x){
-	    System.out.println(a.getNIdAplicacion());
-		 System.out.println(a.getNIdAplicacion());
+	    System.out.println(a.getnIdAplicacion());
+		 System.out.println(a.getnIdAplicacion());
 		}
 	}
 	

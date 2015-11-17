@@ -20,10 +20,12 @@ public class AplicacionServiceImpl implements AplicacionService {
 	
 	@Autowired
 	AplicacionDao applicacionDao;
+	@Autowired
+	Mapper mapper;
+	
+	
 
 	public List<AplicacionDTO> listar() {
-		Mapper mapper = new DozerBeanMapper();
-		
 		List<AplicacionDTO> list = new ArrayList<AplicacionDTO>();
 		for(Aplicacion aplicacion : applicacionDao.findAll()){
 			AplicacionDTO aplicacionDTO = mapper.map(aplicacion, AplicacionDTO.class);		    
@@ -34,8 +36,10 @@ public class AplicacionServiceImpl implements AplicacionService {
 	}
 
 	public AplicacionDTO obtener(Integer id) {
-		Mapper mapper = new DozerBeanMapper();
-		 return	mapper.map(applicacionDao.get(id.longValue()), AplicacionDTO.class);
+		Aplicacion aplicacion = applicacionDao.get(id.longValue());
+		AplicacionDTO aplicacionDTO = new AplicacionDTO() ;
+		mapper.map(aplicacion, aplicacionDTO);
+		return	aplicacionDTO;
 	}
     
 	

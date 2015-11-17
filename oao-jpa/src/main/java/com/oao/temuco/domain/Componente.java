@@ -52,64 +52,64 @@ public class Componente implements Serializable {
 	public Componente() {
 	}
 
-	public long getNIdComponente() {
-		return this.nIdComponente;
+	public long getnIdComponente() {
+		return nIdComponente;
 	}
 
-	public void setNIdComponente(long nIdComponente) {
+	public void setnIdComponente(long nIdComponente) {
 		this.nIdComponente = nIdComponente;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public BigDecimal getNIdMensajeSistemaFk() {
-		return this.nIdMensajeSistemaFk;
+	public BigDecimal getnIdMensajeSistemaFk() {
+		return nIdMensajeSistemaFk;
 	}
 
-	public void setNIdMensajeSistemaFk(BigDecimal nIdMensajeSistemaFk) {
+	public void setnIdMensajeSistemaFk(BigDecimal nIdMensajeSistemaFk) {
 		this.nIdMensajeSistemaFk = nIdMensajeSistemaFk;
 	}
 
-	public String getSNombreOpcion() {
-		return this.sNombreOpcion;
+	public String getsNombreOpcion() {
+		return sNombreOpcion;
 	}
 
-	public void setSNombreOpcion(String sNombreOpcion) {
+	public void setsNombreOpcion(String sNombreOpcion) {
 		this.sNombreOpcion = sNombreOpcion;
 	}
 
-	public String getSTile() {
-		return this.sTile;
+	public String getsTile() {
+		return sTile;
 	}
 
-	public void setSTile(String sTile) {
+	public void setsTile(String sTile) {
 		this.sTile = sTile;
 	}
 
-	public String getSVersionOpcion() {
-		return this.sVersionOpcion;
+	public String getsVersionOpcion() {
+		return sVersionOpcion;
 	}
 
-	public void setSVersionOpcion(String sVersionOpcion) {
+	public void setsVersionOpcion(String sVersionOpcion) {
 		this.sVersionOpcion = sVersionOpcion;
 	}
 
 	public Opcion getOpcion() {
-		return this.opcion;
+		return opcion;
 	}
 
 	public void setOpcion(Opcion opcion) {
@@ -117,25 +117,12 @@ public class Componente implements Serializable {
 	}
 
 	public List<MensajeSistema> getMensajeSistemas() {
-		return this.mensajeSistemas;
+		return mensajeSistemas;
 	}
 
 	public void setMensajeSistemas(List<MensajeSistema> mensajeSistemas) {
 		this.mensajeSistemas = mensajeSistemas;
 	}
 
-	public MensajeSistema addMensajeSistema(MensajeSistema mensajeSistema) {
-		getMensajeSistemas().add(mensajeSistema);
-		mensajeSistema.setComponente(this);
-
-		return mensajeSistema;
-	}
-
-	public MensajeSistema removeMensajeSistema(MensajeSistema mensajeSistema) {
-		getMensajeSistemas().remove(mensajeSistema);
-		mensajeSistema.setComponente(null);
-
-		return mensajeSistema;
-	}
 
 }

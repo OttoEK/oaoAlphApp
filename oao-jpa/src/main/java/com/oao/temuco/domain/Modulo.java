@@ -56,64 +56,64 @@ public class Modulo implements Serializable {
 	public Modulo() {
 	}
 
-	public long getNIdModulo() {
-		return this.nIdModulo;
+	public long getnIdModulo() {
+		return nIdModulo;
 	}
 
-	public void setNIdModulo(long nIdModulo) {
+	public void setnIdModulo(long nIdModulo) {
 		this.nIdModulo = nIdModulo;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public String getSNombreModulo() {
-		return this.sNombreModulo;
+	public String getsNombreModulo() {
+		return sNombreModulo;
 	}
 
-	public void setSNombreModulo(String sNombreModulo) {
+	public void setsNombreModulo(String sNombreModulo) {
 		this.sNombreModulo = sNombreModulo;
 	}
 
-	public String getSTile() {
-		return this.sTile;
+	public String getsTile() {
+		return sTile;
 	}
 
-	public void setSTile(String sTile) {
+	public void setsTile(String sTile) {
 		this.sTile = sTile;
 	}
 
-	public String getSTituloVentana() {
-		return this.sTituloVentana;
+	public String getsTituloVentana() {
+		return sTituloVentana;
 	}
 
-	public void setSTituloVentana(String sTituloVentana) {
+	public void setsTituloVentana(String sTituloVentana) {
 		this.sTituloVentana = sTituloVentana;
 	}
 
-	public String getSVersionModulo() {
-		return this.sVersionModulo;
+	public String getsVersionModulo() {
+		return sVersionModulo;
 	}
 
-	public void setSVersionModulo(String sVersionModulo) {
+	public void setsVersionModulo(String sVersionModulo) {
 		this.sVersionModulo = sVersionModulo;
 	}
 
 	public Aplicacion getAplicacion() {
-		return this.aplicacion;
+		return aplicacion;
 	}
 
 	public void setAplicacion(Aplicacion aplicacion) {
@@ -121,47 +121,20 @@ public class Modulo implements Serializable {
 	}
 
 	public List<Opcion> getOpcions() {
-		return this.opcions;
+		return opcions;
 	}
 
 	public void setOpcions(List<Opcion> opcions) {
 		this.opcions = opcions;
 	}
 
-	public Opcion addOpcion(Opcion opcion) {
-		getOpcions().add(opcion);
-		opcion.setModulo(this);
-
-		return opcion;
-	}
-
-	public Opcion removeOpcion(Opcion opcion) {
-		getOpcions().remove(opcion);
-		opcion.setModulo(null);
-
-		return opcion;
-	}
-
 	public List<Permiso> getPermisos() {
-		return this.permisos;
+		return permisos;
 	}
 
 	public void setPermisos(List<Permiso> permisos) {
 		this.permisos = permisos;
 	}
 
-	public Permiso addPermiso(Permiso permiso) {
-		getPermisos().add(permiso);
-		permiso.setModulo(this);
-
-		return permiso;
-	}
-
-	public Permiso removePermiso(Permiso permiso) {
-		getPermisos().remove(permiso);
-		permiso.setModulo(null);
-
-		return permiso;
-	}
-
+	
 }

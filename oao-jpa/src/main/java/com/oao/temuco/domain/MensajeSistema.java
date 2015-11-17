@@ -55,98 +55,85 @@ public class MensajeSistema implements Serializable {
 	public MensajeSistema() {
 	}
 
-	public long getNIdMensajeSistema() {
-		return this.nIdMensajeSistema;
+	public long getnIdMensajeSistema() {
+		return nIdMensajeSistema;
 	}
 
-	public void setNIdMensajeSistema(long nIdMensajeSistema) {
+	public void setnIdMensajeSistema(long nIdMensajeSistema) {
 		this.nIdMensajeSistema = nIdMensajeSistema;
 	}
 
-	public String getBActivo() {
-		return this.bActivo;
+	public String getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(String bActivo) {
+	public void setbActivo(String bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public String getBAdvertencia() {
-		return this.bAdvertencia;
+	public String getbAdvertencia() {
+		return bAdvertencia;
 	}
 
-	public void setBAdvertencia(String bAdvertencia) {
+	public void setbAdvertencia(String bAdvertencia) {
 		this.bAdvertencia = bAdvertencia;
 	}
 
-	public String getBError() {
-		return this.bError;
+	public String getbError() {
+		return bError;
 	}
 
-	public void setBError(String bError) {
+	public void setbError(String bError) {
 		this.bError = bError;
 	}
 
-	public String getBMensajeUsuario() {
-		return this.bMensajeUsuario;
+	public String getbMensajeUsuario() {
+		return bMensajeUsuario;
 	}
 
-	public void setBMensajeUsuario(String bMensajeUsuario) {
+	public void setbMensajeUsuario(String bMensajeUsuario) {
 		this.bMensajeUsuario = bMensajeUsuario;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public String getSIdioma() {
-		return this.sIdioma;
+	public String getsIdioma() {
+		return sIdioma;
 	}
 
-	public void setSIdioma(String sIdioma) {
+	public void setsIdioma(String sIdioma) {
 		this.sIdioma = sIdioma;
 	}
 
-	public String getSMensaje() {
-		return this.sMensaje;
+	public String getsMensaje() {
+		return sMensaje;
 	}
 
-	public void setSMensaje(String sMensaje) {
+	public void setsMensaje(String sMensaje) {
 		this.sMensaje = sMensaje;
 	}
 
 	public List<Auditoria> getAuditorias() {
-		return this.auditorias;
+		return auditorias;
 	}
 
 	public void setAuditorias(List<Auditoria> auditorias) {
 		this.auditorias = auditorias;
 	}
 
-	public Auditoria addAuditoria(Auditoria auditoria) {
-		getAuditorias().add(auditoria);
-		auditoria.setMensajeSistema(this);
-
-		return auditoria;
-	}
-
-	public Auditoria removeAuditoria(Auditoria auditoria) {
-		getAuditorias().remove(auditoria);
-		auditoria.setMensajeSistema(null);
-
-		return auditoria;
-	}
-
 	public Componente getComponente() {
-		return this.componente;
+		return componente;
 	}
 
 	public void setComponente(Componente componente) {
 		this.componente = componente;
 	}
 
+	
 }

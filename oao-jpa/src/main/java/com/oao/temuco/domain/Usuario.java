@@ -54,112 +54,86 @@ public class Usuario implements Serializable {
 	public Usuario() {
 	}
 
-	public long getNIdUsuario() {
-		return this.nIdUsuario;
+	public long getnIdUsuario() {
+		return nIdUsuario;
 	}
 
-	public void setNIdUsuario(long nIdUsuario) {
+	public void setnIdUsuario(long nIdUsuario) {
 		this.nIdUsuario = nIdUsuario;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public BigDecimal getBBloqueado() {
-		return this.bBloqueado;
+	public BigDecimal getbBloqueado() {
+		return bBloqueado;
 	}
 
-	public void setBBloqueado(BigDecimal bBloqueado) {
+	public void setbBloqueado(BigDecimal bBloqueado) {
 		this.bBloqueado = bBloqueado;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public BigDecimal getNIntentos() {
-		return this.nIntentos;
+	public BigDecimal getnIntentos() {
+		return nIntentos;
 	}
 
-	public void setNIntentos(BigDecimal nIntentos) {
+	public void setnIntentos(BigDecimal nIntentos) {
 		this.nIntentos = nIntentos;
 	}
 
-	public String getSContrasenia() {
-		return this.sContrasenia;
+	public String getsContrasenia() {
+		return sContrasenia;
 	}
 
-	public void setSContrasenia(String sContrasenia) {
+	public void setsContrasenia(String sContrasenia) {
 		this.sContrasenia = sContrasenia;
 	}
 
-	public String getSEmail() {
-		return this.sEmail;
+	public String getsEmail() {
+		return sEmail;
 	}
 
-	public void setSEmail(String sEmail) {
+	public void setsEmail(String sEmail) {
 		this.sEmail = sEmail;
 	}
 
-	public String getSNombreUsuario() {
-		return this.sNombreUsuario;
+	public String getsNombreUsuario() {
+		return sNombreUsuario;
 	}
 
-	public void setSNombreUsuario(String sNombreUsuario) {
+	public void setsNombreUsuario(String sNombreUsuario) {
 		this.sNombreUsuario = sNombreUsuario;
 	}
 
 	public List<Permiso> getPermisos() {
-		return this.permisos;
+		return permisos;
 	}
 
 	public void setPermisos(List<Permiso> permisos) {
 		this.permisos = permisos;
 	}
 
-	public Permiso addPermiso(Permiso permiso) {
-		getPermisos().add(permiso);
-		permiso.setUsuario(this);
-
-		return permiso;
-	}
-
-	public Permiso removePermiso(Permiso permiso) {
-		getPermisos().remove(permiso);
-		permiso.setUsuario(null);
-
-		return permiso;
-	}
-
 	public List<PreguntaSeguridad> getPreguntaSeguridads() {
-		return this.preguntaSeguridads;
+		return preguntaSeguridads;
 	}
 
 	public void setPreguntaSeguridads(List<PreguntaSeguridad> preguntaSeguridads) {
 		this.preguntaSeguridads = preguntaSeguridads;
 	}
 
-	public PreguntaSeguridad addPreguntaSeguridad(PreguntaSeguridad preguntaSeguridad) {
-		getPreguntaSeguridads().add(preguntaSeguridad);
-		preguntaSeguridad.setUsuario(this);
 
-		return preguntaSeguridad;
-	}
-
-	public PreguntaSeguridad removePreguntaSeguridad(PreguntaSeguridad preguntaSeguridad) {
-		getPreguntaSeguridads().remove(preguntaSeguridad);
-		preguntaSeguridad.setUsuario(null);
-
-		return preguntaSeguridad;
-	}
 
 }

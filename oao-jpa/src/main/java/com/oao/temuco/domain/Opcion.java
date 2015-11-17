@@ -56,86 +56,72 @@ public class Opcion implements Serializable {
 	public Opcion() {
 	}
 
-	public long getNIdOpcion() {
-		return this.nIdOpcion;
+	public long getnIdOpcion() {
+		return nIdOpcion;
 	}
 
-	public void setNIdOpcion(long nIdOpcion) {
+	public void setnIdOpcion(long nIdOpcion) {
 		this.nIdOpcion = nIdOpcion;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public String getSNombreOpcion() {
-		return this.sNombreOpcion;
+	public String getsNombreOpcion() {
+		return sNombreOpcion;
 	}
 
-	public void setSNombreOpcion(String sNombreOpcion) {
+	public void setsNombreOpcion(String sNombreOpcion) {
 		this.sNombreOpcion = sNombreOpcion;
 	}
 
-	public String getSTextoOpcion() {
-		return this.sTextoOpcion;
+	public String getsTextoOpcion() {
+		return sTextoOpcion;
 	}
 
-	public void setSTextoOpcion(String sTextoOpcion) {
+	public void setsTextoOpcion(String sTextoOpcion) {
 		this.sTextoOpcion = sTextoOpcion;
 	}
 
-	public String getSTile() {
-		return this.sTile;
+	public String getsTile() {
+		return sTile;
 	}
 
-	public void setSTile(String sTile) {
+	public void setsTile(String sTile) {
 		this.sTile = sTile;
 	}
 
-	public String getSVersionOpcion() {
-		return this.sVersionOpcion;
+	public String getsVersionOpcion() {
+		return sVersionOpcion;
 	}
 
-	public void setSVersionOpcion(String sVersionOpcion) {
+	public void setsVersionOpcion(String sVersionOpcion) {
 		this.sVersionOpcion = sVersionOpcion;
 	}
 
 	public List<Componente> getComponentes() {
-		return this.componentes;
+		return componentes;
 	}
 
 	public void setComponentes(List<Componente> componentes) {
 		this.componentes = componentes;
 	}
 
-	public Componente addComponente(Componente componente) {
-		getComponentes().add(componente);
-		componente.setOpcion(this);
-
-		return componente;
-	}
-
-	public Componente removeComponente(Componente componente) {
-		getComponentes().remove(componente);
-		componente.setOpcion(null);
-
-		return componente;
-	}
-
 	public Modulo getModulo() {
-		return this.modulo;
+		return modulo;
 	}
 
 	public void setModulo(Modulo modulo) {
@@ -143,25 +129,13 @@ public class Opcion implements Serializable {
 	}
 
 	public List<Permiso> getPermisos() {
-		return this.permisos;
+		return permisos;
 	}
 
 	public void setPermisos(List<Permiso> permisos) {
 		this.permisos = permisos;
 	}
 
-	public Permiso addPermiso(Permiso permiso) {
-		getPermisos().add(permiso);
-		permiso.setOpcion(this);
 
-		return permiso;
-	}
-
-	public Permiso removePermiso(Permiso permiso) {
-		getPermisos().remove(permiso);
-		permiso.setOpcion(null);
-
-		return permiso;
-	}
 
 }

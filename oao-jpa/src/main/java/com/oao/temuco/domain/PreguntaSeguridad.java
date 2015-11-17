@@ -42,52 +42,54 @@ public class PreguntaSeguridad implements Serializable {
 	public PreguntaSeguridad() {
 	}
 
-	public long getNIdPregunta() {
-		return this.nIdPregunta;
+	public long getnIdPregunta() {
+		return nIdPregunta;
 	}
 
-	public void setNIdPregunta(long nIdPregunta) {
+	public void setnIdPregunta(long nIdPregunta) {
 		this.nIdPregunta = nIdPregunta;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public Date getDFechaCreacion() {
-		return this.dFechaCreacion;
+	public Date getdFechaCreacion() {
+		return dFechaCreacion;
 	}
 
-	public void setDFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(Date dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 
-	public String getSPregunta() {
-		return this.sPregunta;
+	public String getsPregunta() {
+		return sPregunta;
 	}
 
-	public void setSPregunta(String sPregunta) {
+	public void setsPregunta(String sPregunta) {
 		this.sPregunta = sPregunta;
 	}
 
-	public String getSRespuesta() {
-		return this.sRespuesta;
+	public String getsRespuesta() {
+		return sRespuesta;
 	}
 
-	public void setSRespuesta(String sRespuesta) {
+	public void setsRespuesta(String sRespuesta) {
 		this.sRespuesta = sRespuesta;
 	}
 
 	public Usuario getUsuario() {
-		return this.usuario;
+		return usuario;
 	}
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
+
 
 }

@@ -65,78 +65,64 @@ public class Permiso implements Serializable {
 	public Permiso() {
 	}
 
-	public long getNIdPermiso() {
-		return this.nIdPermiso;
+	public long getnIdPermiso() {
+		return nIdPermiso;
 	}
 
-	public void setNIdPermiso(long nIdPermiso) {
+	public void setnIdPermiso(long nIdPermiso) {
 		this.nIdPermiso = nIdPermiso;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public BigDecimal getBEscritura() {
-		return this.bEscritura;
+	public BigDecimal getbEscritura() {
+		return bEscritura;
 	}
 
-	public void setBEscritura(BigDecimal bEscritura) {
+	public void setbEscritura(BigDecimal bEscritura) {
 		this.bEscritura = bEscritura;
 	}
 
-	public BigDecimal getBLectura() {
-		return this.bLectura;
+	public BigDecimal getbLectura() {
+		return bLectura;
 	}
 
-	public void setBLectura(BigDecimal bLectura) {
+	public void setbLectura(BigDecimal bLectura) {
 		this.bLectura = bLectura;
 	}
 
-	public Date getDDesde() {
-		return this.dDesde;
+	public Date getdDesde() {
+		return dDesde;
 	}
 
-	public void setDDesde(Date dDesde) {
+	public void setdDesde(Date dDesde) {
 		this.dDesde = dDesde;
 	}
 
-	public Date getDHasta() {
-		return this.dHasta;
+	public Date getdHasta() {
+		return dHasta;
 	}
 
-	public void setDHasta(Date dHasta) {
+	public void setdHasta(Date dHasta) {
 		this.dHasta = dHasta;
 	}
 
 	public List<Auditoria> getAuditorias() {
-		return this.auditorias;
+		return auditorias;
 	}
 
 	public void setAuditorias(List<Auditoria> auditorias) {
 		this.auditorias = auditorias;
 	}
 
-	public Auditoria addAuditoria(Auditoria auditoria) {
-		getAuditorias().add(auditoria);
-		auditoria.setPermiso(this);
-
-		return auditoria;
-	}
-
-	public Auditoria removeAuditoria(Auditoria auditoria) {
-		getAuditorias().remove(auditoria);
-		auditoria.setPermiso(null);
-
-		return auditoria;
-	}
-
 	public Aplicacion getAplicacion() {
-		return this.aplicacion;
+		return aplicacion;
 	}
 
 	public void setAplicacion(Aplicacion aplicacion) {
@@ -144,7 +130,7 @@ public class Permiso implements Serializable {
 	}
 
 	public Modulo getModulo() {
-		return this.modulo;
+		return modulo;
 	}
 
 	public void setModulo(Modulo modulo) {
@@ -152,7 +138,7 @@ public class Permiso implements Serializable {
 	}
 
 	public Opcion getOpcion() {
-		return this.opcion;
+		return opcion;
 	}
 
 	public void setOpcion(Opcion opcion) {
@@ -160,11 +146,13 @@ public class Permiso implements Serializable {
 	}
 
 	public Usuario getUsuario() {
-		return this.usuario;
+		return usuario;
 	}
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
+
 
 }

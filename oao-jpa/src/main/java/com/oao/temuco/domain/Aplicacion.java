@@ -50,96 +50,70 @@ public class Aplicacion implements Serializable {
 	public Aplicacion() {
 	}
 
-	public long getNIdAplicacion() {
-		return this.nIdAplicacion;
+	public long getnIdAplicacion() {
+		return nIdAplicacion;
 	}
 
-	public void setNIdAplicacion(long nIdAplicacion) {
+	public void setnIdAplicacion(long nIdAplicacion) {
 		this.nIdAplicacion = nIdAplicacion;
 	}
 
-	public BigDecimal getBActivo() {
-		return this.bActivo;
+	public BigDecimal getbActivo() {
+		return bActivo;
 	}
 
-	public void setBActivo(BigDecimal bActivo) {
+	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
 
-	public String getSNombreAplicacion() {
-		return this.sNombreAplicacion;
+	public String getsNombreAplicacion() {
+		return sNombreAplicacion;
 	}
 
-	public void setSNombreAplicacion(String sNombreAplicacion) {
+	public void setsNombreAplicacion(String sNombreAplicacion) {
 		this.sNombreAplicacion = sNombreAplicacion;
 	}
 
-	public String getSTituloVentana() {
-		return this.sTituloVentana;
+	public String getsTituloVentana() {
+		return sTituloVentana;
 	}
 
-	public void setSTituloVentana(String sTituloVentana) {
+	public void setsTituloVentana(String sTituloVentana) {
 		this.sTituloVentana = sTituloVentana;
 	}
 
-	public String getSUrlInicio() {
-		return this.sUrlInicio;
+	public String getsUrlInicio() {
+		return sUrlInicio;
 	}
 
-	public void setSUrlInicio(String sUrlInicio) {
+	public void setsUrlInicio(String sUrlInicio) {
 		this.sUrlInicio = sUrlInicio;
 	}
 
-	public String getSVersionAplicacion() {
-		return this.sVersionAplicacion;
+	public String getsVersionAplicacion() {
+		return sVersionAplicacion;
 	}
 
-	public void setSVersionAplicacion(String sVersionAplicacion) {
+	public void setsVersionAplicacion(String sVersionAplicacion) {
 		this.sVersionAplicacion = sVersionAplicacion;
 	}
 
 	public List<Modulo> getModulos() {
-		return this.modulos;
+		return modulos;
 	}
 
 	public void setModulos(List<Modulo> modulos) {
 		this.modulos = modulos;
 	}
 
-	public Modulo addModulo(Modulo modulo) {
-		getModulos().add(modulo);
-		modulo.setAplicacion(this);
-
-		return modulo;
-	}
-
-	public Modulo removeModulo(Modulo modulo) {
-		getModulos().remove(modulo);
-		modulo.setAplicacion(null);
-
-		return modulo;
-	}
-
 	public List<Permiso> getPermisos() {
-		return this.permisos;
+		return permisos;
 	}
 
 	public void setPermisos(List<Permiso> permisos) {
 		this.permisos = permisos;
 	}
 
-	public Permiso addPermiso(Permiso permiso) {
-		getPermisos().add(permiso);
-		permiso.setAplicacion(this);
 
-		return permiso;
-	}
-
-	public Permiso removePermiso(Permiso permiso) {
-		getPermisos().remove(permiso);
-		permiso.setAplicacion(null);
-
-		return permiso;
-	}
 
 }
