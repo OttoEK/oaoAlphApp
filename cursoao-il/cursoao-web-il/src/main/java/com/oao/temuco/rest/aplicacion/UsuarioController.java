@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.oao.temuco.dto.PermisoDTO;
+import com.oao.temuco.dto.PreguntaSeguridadDTO;
 import com.oao.temuco.dto.UsuarioDTO;
 import com.oao.temuco.servicios.UsuarioService;
 
@@ -33,6 +34,12 @@ public class UsuarioController {
 	@ResponseBody
 	public List<PermisoDTO> obtenerPermisos(@RequestBody final Integer idUsuario, final HttpServletRequest request)  {
 		return  usuarioService.obtenerPermisos(idUsuario);
+		
+	}
+	@RequestMapping(value = "/obtenerPreguntasSeguridad", method = RequestMethod.POST)
+	@ResponseBody
+	public List<PreguntaSeguridadDTO> obtenerPreguntasSeguridad(@RequestBody final Integer idUsuario, final HttpServletRequest request)  {
+		return  usuarioService.obtenerPreguntasSeguridad(idUsuario);
 		
 	}
 

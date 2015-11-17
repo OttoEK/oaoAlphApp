@@ -12,11 +12,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.oao.temuco.dao.AplicacionDao;
 import com.oao.temuco.dao.UsuarioDao;
 import com.oao.temuco.domain.Permiso;
+import com.oao.temuco.domain.PreguntaSeguridad;
 import com.oao.temuco.domain.Usuario;
 import com.oao.temuco.dto.PermisoDTO;
+import com.oao.temuco.dto.PreguntaSeguridadDTO;
 import com.oao.temuco.dto.UsuarioDTO;
 
 @Service
@@ -55,6 +56,15 @@ public class UsuarioServiceImpl  implements UsuarioService {
 			lPermiso.add(mapper.map(p, PermisoDTO.class));
 		}
 		return lPermiso;
+	}
+
+	public List<PreguntaSeguridadDTO> obtenerPreguntasSeguridad(Integer idUsuario) {
+		Usuario u = usuarioDao.get(idUsuario.longValue());
+		List<PreguntaSeguridadDTO>  lPreSegur = new ArrayList<PreguntaSeguridadDTO>();
+		for(PreguntaSeguridad p : u.getPreguntaSeguridads()){
+			lPreSegur.add(mapper.map(p, PreguntaSeguridadDTO.class));
+		}
+		return lPreSegur;
 	}
 
 }
