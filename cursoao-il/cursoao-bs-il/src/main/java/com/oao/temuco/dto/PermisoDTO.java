@@ -1,8 +1,6 @@
 package com.oao.temuco.dto;
 
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
 
 public class PermisoDTO {
 	
@@ -10,8 +8,8 @@ public class PermisoDTO {
 	private BigDecimal bActivo;
 	private BigDecimal bEscritura;
 	private BigDecimal bLectura;
-	private Date dDesde;
-	private Date dHasta;
+	private String dDesde;
+	private String dHasta;
 //	private List<AuditoriaDTO> auditorias;
 //	private AplicacionDTO aplicacion;
 //	private ModuloDTO modulo;
@@ -42,16 +40,16 @@ public class PermisoDTO {
 	public void setbLectura(BigDecimal bLectura) {
 		this.bLectura = bLectura;
 	}
-	public Date getdDesde() {
+	public String getdDesde() {
 		return dDesde;
 	}
-	public void setdDesde(Date dDesde) {
+	public void setdDesde(String dDesde) {
 		this.dDesde = dDesde;
 	}
-	public Date getdHasta() {
+	public String getdHasta() {
 		return dHasta;
 	}
-	public void setdHasta(Date dHasta) {
+	public void setdHasta(String dHasta) {
 		this.dHasta = dHasta;
 	}
 //	public List<AuditoriaDTO> getAuditorias() {

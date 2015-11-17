@@ -1,17 +1,16 @@
 package com.oao.temuco.dto;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 public class PreguntaSeguridadDTO {
 	
 
 	private long nIdPregunta;
 	private BigDecimal bActivo;
-	private Date dFechaCreacion;
+	private String dFechaCreacion;
 	private String sPregunta;
 	private String sRespuesta;
-	private UsuarioDTO usuario;
+//	private UsuarioDTO usuario;
 	
 	public long getnIdPregunta() {
 		return nIdPregunta;
@@ -25,10 +24,10 @@ public class PreguntaSeguridadDTO {
 	public void setbActivo(BigDecimal bActivo) {
 		this.bActivo = bActivo;
 	}
-	public Date getdFechaCreacion() {
+	public String getdFechaCreacion() {
 		return dFechaCreacion;
 	}
-	public void setdFechaCreacion(Date dFechaCreacion) {
+	public void setdFechaCreacion(String dFechaCreacion) {
 		this.dFechaCreacion = dFechaCreacion;
 	}
 	public String getsPregunta() {
@@ -43,12 +42,12 @@ public class PreguntaSeguridadDTO {
 	public void setsRespuesta(String sRespuesta) {
 		this.sRespuesta = sRespuesta;
 	}
-	public UsuarioDTO getUsuario() {
-		return usuario;
-	}
-	public void setUsuario(UsuarioDTO usuario) {
-		this.usuario = usuario;
-	}
+//	public UsuarioDTO getUsuario() {
+//		return usuario;
+//	}
+//	public void setUsuario(UsuarioDTO usuario) {
+//		this.usuario = usuario;
+//	}
 
 
 }
