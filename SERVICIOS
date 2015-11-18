@@ -1,0 +1,42 @@
+/usuario/obtenerPorNombre
+
+entrada : NombreUsuario
+
+salida:
+
+nIdUsuario;
+bActivo;
+bBloqueado;
+dFechaCreacion;
+nIntentos;
+String sContrasenia;
+sEmail;
+sNombreUsuario;
+
+
+/usuario/obtenerPermisos
+
+entrada : IdUsuario
+
+
+salida: Lista de :
+
+nIdPermiso;
+bActivo;
+bEscritura;
+bLectura;
+dDesde;
+dHasta;
+
+
+/usuario/obtenerPreguntasSeguridad
+
+entrada : IdUsuario
+
+salida: Lista de :
+
+nIdPregunta;
+bActivo;
+dFechaCreacion;
+sPregunta;
+sRespuesta;
