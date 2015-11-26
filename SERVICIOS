@@ -1,5 +1,6 @@
 http://localhost:8080/cursoao-web-il/
 
+-----------------------------------------------------------------
 
 /usuario/obtenerPorNombre
 
@@ -15,7 +16,7 @@ nIntentos;
 String sContrasenia;
 sEmail;
 sNombreUsuario;
-
+-----------------------------------------------------------------
 
 /usuario/obtenerPermisos
 
@@ -30,7 +31,7 @@ bEscritura;
 bLectura;
 dDesde;
 dHasta;
-
+-----------------------------------------------------------------
 
 /usuario/obtenerPreguntasSeguridad
 
@@ -43,3 +44,66 @@ bActivo;
 dFechaCreacion;
 sPregunta;
 sRespuesta;
+
+
+-----------------------------------------------------------------
+
+/aplicacion/listar
+
+entrada : no
+
+salida: Lista de :
+
+nIdAplicacion;
+bActivo;
+sNombreAplicacion;
+sTituloVentana;
+sUrlInicio;
+sVersionAplicacion;
+
+-----------------------------------------------------------------
+
+/aplicacion/obtener
+
+entrada : idAplicacion
+
+salida: 
+
+nIdAplicacion;
+bActivo;
+sNombreAplicacion;
+sTituloVentana;
+sUrlInicio;
+sVersionAplicacion;
+-----------------------------------------------------------------
+
+/aplicacion/obtenerModulos
+
+entrada : idAplicacion
+
+salida lista: 
+
+nIdModulo;
+bActivo;
+dFechaCreacion;
+sNombreModulo;
+sTile;
+sTituloVentana;
+sVersionModulo;
+
+-----------------------------------------------------------------
+
+/aplicacion/obtenerPermisos
+
+entrada : idAplicacion
+
+salida: 
+
+nIdPermiso;
+bActivo;
+bEscritura;
+bLectura;
+ dDesde;
+ dHasta;
+
+

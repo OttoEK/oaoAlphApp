@@ -15,9 +15,9 @@ public class ModuloDTO {
 	private String sTile;
 	private String sTituloVentana;
 	private String sVersionModulo;
-	private Aplicacion aplicacion;
-	private List<OpcionDTO> opcions;
-	private List<PermisoDTO> permisos;
+//	private Aplicacion aplicacion;
+//	private List<OpcionDTO> opcions;
+//	private List<PermisoDTO> permisos;
 	public long getnIdModulo() {
 		return nIdModulo;
 	}
@@ -60,23 +60,23 @@ public class ModuloDTO {
 	public void setsVersionModulo(String sVersionModulo) {
 		this.sVersionModulo = sVersionModulo;
 	}
-	public Aplicacion getAplicacion() {
-		return aplicacion;
-	}
-	public void setAplicacion(Aplicacion aplicacion) {
-		this.aplicacion = aplicacion;
-	}
-	public List<OpcionDTO> getOpcions() {
-		return opcions;
-	}
-	public void setOpcions(List<OpcionDTO> opcions) {
-		this.opcions = opcions;
-	}
-	public List<PermisoDTO> getPermisos() {
-		return permisos;
-	}
-	public void setPermisos(List<PermisoDTO> permisos) {
-		this.permisos = permisos;
-	}
+//	public Aplicacion getAplicacion() {
+//		return aplicacion;
+//	}
+//	public void setAplicacion(Aplicacion aplicacion) {
+//		this.aplicacion = aplicacion;
+//	}
+//	public List<OpcionDTO> getOpcions() {
+//		return opcions;
+//	}
+//	public void setOpcions(List<OpcionDTO> opcions) {
+//		this.opcions = opcions;
+//	}
+//	public List<PermisoDTO> getPermisos() {
+//		return permisos;
+//	}
+//	public void setPermisos(List<PermisoDTO> permisos) {
+//		this.permisos = permisos;
+//	}
 
 }

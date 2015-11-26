@@ -14,6 +14,8 @@ public class UsuarioDTO {
 	private String sEmail;
 	private String sNombreUsuario;
 	
+	
+	
 	public UsuarioDTO() {
 	}
 
