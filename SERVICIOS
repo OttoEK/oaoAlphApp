@@ -105,5 +105,48 @@ bEscritura;
 bLectura;
  dDesde;
  dHasta;
+ 
+ -------------------------------------------------------------
 
+aplicacion/nueva
 
+entrada :
+
+{
+"nIdAplicacion":null,
+"bActivo":1,
+"sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
+"sTituloVentana":"OAO",
+"sUrlInicio":"www.oaooaoao.cl",
+"sVersionAplicacion":"5"
+}
+
+ -------------------------------------------------------------
+
+aplicacion/actualizar
+
+entrada :
+
+{
+"nIdAplicacion":1050,
+"bActivo":1,
+"sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
+"sTituloVentana":"OAO",
+"sUrlInicio":"www.oaooaoao.cl",
+"sVersionAplicacion":"5"
+}
+
+ -------------------------------------------------------------
+
+aplicacion/borrar
+
+entrada :
+
+{
+"nIdAplicacion":1050,
+"bActivo":1,
+"sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
+"sTituloVentana":"OAO",
+"sUrlInicio":"www.oaooaoao.cl",
+"sVersionAplicacion":"5"
+}
