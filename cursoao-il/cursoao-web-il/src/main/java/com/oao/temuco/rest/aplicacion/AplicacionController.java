@@ -52,6 +52,22 @@ AplicacionService aplicacionService;
 		
 	}
 	
-
-
+	@RequestMapping(value = "/nueva", method = RequestMethod.POST)
+	@ResponseBody
+	public AplicacionDTO aplicacionNueva(@RequestBody final AplicacionDTO aplicacion, final HttpServletRequest request)  {
+		return aplicacionService.nueva(aplicacion);
+		
+	}
+	@RequestMapping(value = "/actualizar", method = RequestMethod.POST)
+	@ResponseBody
+	public AplicacionDTO aplicacionActualizar(@RequestBody final AplicacionDTO aplicacion, final HttpServletRequest request)  {
+		return aplicacionService.actualizar(aplicacion);
+		
+	}
+	@RequestMapping(value = "/borrar", method = RequestMethod.POST)
+	@ResponseBody
+	public boolean aplicacionBorrar(@RequestBody final AplicacionDTO aplicacion, final HttpServletRequest request)  {
+		return aplicacionService.borrar(aplicacion);
+		
+	}
 }

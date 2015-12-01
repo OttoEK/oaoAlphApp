@@ -95,8 +95,8 @@ public class HibernateBaseRepositoryDataSource<T extends Serializable, ID extend
 	}
 
 	@Override
-	public void update(final T entity) {
-		super.update(entity);
+	public T update(final T entity) {
+		return super.update(entity);
 	}
 
 	@Override

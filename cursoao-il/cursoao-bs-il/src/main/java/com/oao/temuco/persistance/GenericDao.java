@@ -7,6 +7,8 @@ import java.util.Map;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+import com.oao.temuco.domain.Aplicacion;
+
 /**
  * The Interface GenericDao.
  *
@@ -130,8 +132,9 @@ public interface GenericDao<T extends Serializable> {
 	 * Update.
 	 *
 	 * @param entity the entity
+	 * @return 
 	 */
-	void update(T entity);
+	T update(T entity);
 
 	/**
 	 * Delete.

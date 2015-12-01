@@ -19,7 +19,7 @@ public class Aplicacion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="APLICACION_NIDAPLICACION_GENERATOR" )
+	@SequenceGenerator(name="APLICACION_NIDAPLICACION_GENERATOR",sequenceName = "APLICACION_SEQ" )
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APLICACION_NIDAPLICACION_GENERATOR")
 	@Column(name="N_ID_APLICACION")
 	private long nIdAplicacion;

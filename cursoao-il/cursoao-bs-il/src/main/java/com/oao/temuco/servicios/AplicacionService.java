@@ -12,8 +12,14 @@ List<AplicacionDTO> listar();
 
 AplicacionDTO obtener(Integer id);
 
+AplicacionDTO nueva(AplicacionDTO aplicacionDTO);
+
+AplicacionDTO actualizar(AplicacionDTO aplicacionDTO);
+
 List<ModuloDTO> obtenerModulos(Integer id);
 
 List<PermisoDTO> obtenerPermisos(Integer id);
+
+boolean borrar(AplicacionDTO aplicacionDTO);
 
 }

@@ -276,8 +276,9 @@ public abstract class AbstractHibernateDao<T extends Serializable> implements Ge
 	 * @param entity the entity
 	 */
 
-	public void update( final T entity ){
+	public T update( final T entity ){
 		this.getCurrentSession().merge( entity );
+		return entity;
 	}
 	
 	// delete

@@ -39,6 +39,21 @@ public class AplicacionServiceImpl implements AplicacionService {
 		Aplicacion aplicacion = applicacionDao.get(id.longValue());
 		return	mapper.map(aplicacion, AplicacionDTO.class);
 	}
+	
+	public AplicacionDTO nueva(AplicacionDTO aplicacionDTO ) {
+		Aplicacion aplicacion = applicacionDao.save(mapper.map(aplicacionDTO,Aplicacion.class));
+		return	mapper.map(aplicacion, AplicacionDTO.class);
+	}
+	
+	public AplicacionDTO actualizar(AplicacionDTO aplicacionDTO) {
+		Aplicacion aplicacion = applicacionDao.update(mapper.map(aplicacionDTO,Aplicacion.class));
+		return	mapper.map(aplicacion, AplicacionDTO.class);
+	}
+
+	public boolean borrar(AplicacionDTO aplicacionDTO) {
+		applicacionDao.delete(mapper.map(aplicacionDTO,Aplicacion.class));
+		return true;
+	}
 
 	
 	public List<ModuloDTO> obtenerModulos(Integer id) {
@@ -58,6 +73,7 @@ public class AplicacionServiceImpl implements AplicacionService {
 		}			
 		return list;
 	}
+
 
 
 }
