@@ -106,13 +106,11 @@ bLectura;
  dDesde;
  dHasta;
  
- -------------------------------------------------------------
-
-aplicacion/nueva
-
-entrada :
-
-{
+ ---------------------------------------------------------
+ 
+ /aplicacion/nueva
+ 
+ {
 "nIdAplicacion":null,
 "bActivo":1,
 "sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
@@ -121,13 +119,11 @@ entrada :
 "sVersionAplicacion":"5"
 }
 
- -------------------------------------------------------------
-
-aplicacion/actualizar
-
-entrada :
-
-{
+ ---------------------------------------------------------
+ 
+ /aplicacion/actualizar
+ 
+ {
 "nIdAplicacion":1050,
 "bActivo":1,
 "sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
@@ -136,13 +132,11 @@ entrada :
 "sVersionAplicacion":"5"
 }
 
- -------------------------------------------------------------
-
-aplicacion/borrar
-
-entrada :
-
-{
+ ---------------------------------------------------------
+ 
+ /aplicacion/borrar
+ 
+ {
 "nIdAplicacion":1050,
 "bActivo":1,
 "sNombreAplicacion":"OAO REPUBLICA INDEPENDIENTE",
