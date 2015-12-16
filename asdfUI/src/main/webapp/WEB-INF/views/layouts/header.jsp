@@ -5,44 +5,23 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<header id="header">
-	<div class="sign_on header_div">
-		
-		<div id="questions_content">
-			<div class="button_questions button_panel"
-				title="Questions About This Application?"
-				data-sc-track="OAO Questions About App" data-sc-vars="eVar63">
-
-				 <em>Questions
-					About This Application?</em>
-				<div id="Q_about" class="panel" style="display: none;">
-					<span class="error">Tenemos representantes disponibles para
-						asistirle en español</span>
-					<div class="content_popup">
-						<ul>
-							<li><p>
-									Representatives are available to<br> assist you while you
-									apply:
-								</p>
-								<p>
-									<strong>sdfsdfsdf</strong>. Monday
-									- Friday
-								</p>
-								<p>
-									<strong> sfsdfdsf</strong>. Saturday
-								</p></li>
-							
-							<li class="lc" id="tel_about"><a href="#">324234234</a></li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!--  -->
-		<h1>
-			<a href="#" title="BBVA Compass OAOA"><strong>BBVA
-					Compass OAOA</strong></a>
-		</h1>
-	</div>
-</header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Cursos OAO</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/oaoui">Inicio</a></li>
+            <li><a href="agregar">Agregar</a></li>
+            <li><a href="listar">Listar</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

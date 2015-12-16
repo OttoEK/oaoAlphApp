@@ -2,22 +2,68 @@
 <flow xmlns="http://www.springframework.org/schema/webflow"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/webflow
-  http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+  http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd" start-state="isListar">
 	
+	<var name="aplicaciones" class="com.oao.oaoui.entities.ListAplicacion" />
+	<var name="aplicacion" class="com.oao.oaoui.entities.Aplicacion" />
 	
+	<action-state id="isListar">
+		<evaluate expression="externalContext.sessionMap.view" />
+		<transition on="home" to="home" />
+		<transition on="listar" to="listarAction" />
+		<transition on="agregar" to="agregar" />
+    </action-state>
     
-    <view-state id="order" view="viewOrder">
-        <transition on="continue" to="action"/>
+    <view-state id="home" view="home">
     </view-state>
-   
-    <action-state id="action">
-    	<evaluate expression="mainAction.function()" />
-    	<transition to="order2"/>
+   	
+   	<action-state id="listarAction">
+    	<evaluate expression="mainAction.aplicacionListar()" result="aplicaciones"/>
+    	<transition to="listar"/>
+    </action-state>
+    
+   	<view-state id="listar" view="listar">
+		<transition on="borrar" to="borrarAction"/>
+		<transition on="actualizar" to="actualizarView"/>   	
+    </view-state>
+    
+    <action-state id="borrarAction">
+    
+    	<transition to="listar"/>
     </action-state>
     
     
-    <view-state id="order2" view="viewOrder2">
-    
+    <view-state id="actualizarView" view="actualizar" model="aplicacion">
+		<binder>
+			<binding property="sNombreAplicacion"/>
+			<binding property="sTituloVentana"/>
+			<binding property="sUrlInicio"/>
+			<binding property="bActivo"/>
+		</binder>
+		<transition on="actualizar" to="actualizarAction"/>   	
     </view-state>
+    
+    <action-state id="actualizarAction">
+    	
+    
+    	<transition to="listar"/>
+    </action-state>
+    
+    <view-state id="agregar" view="agregar" model="aplicacion">
+    	<binder>
+			<binding property="sNombreAplicacion"/>
+			<binding property="sTituloVentana"/>
+			<binding property="sUrlInicio"/>
+			<binding property="bActivo"/>
+    	</binder>
+    	<transition on="agregar" to="agregarAction" />
+    </view-state>
+    
+    <action-state id="agregarAction">
+    	<evaluate expression="mainAction.aplicacionAgregar(aplicacion)"/>
+    	<transition to="listarAction"/>
+    </action-state>
+    
+    
 
 </flow>

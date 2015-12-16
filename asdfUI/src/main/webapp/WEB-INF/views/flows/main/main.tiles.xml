@@ -9,14 +9,22 @@
         <put-attribute name="main-container" value="/WEB-INF/views/layouts/main-preload.jsp" />
     </definition>
     
-    <definition name="viewOrder" template="/WEB-INF/views/flows/main/standard.jsp">
+    <definition name="home" template="/WEB-INF/views/flows/main/home.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
     </definition>
     
-    <definition name="viewOrder2" template="/WEB-INF/views/flows/main/standard2.jsp">
+    <definition name="listar" template="/WEB-INF/views/flows/main/listar.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />		
+    </definition>
+    
+    <definition name="agregar" template="/WEB-INF/views/flows/main/agregar.jsp">
+    	<put-attribute name="form" value="/WEB-INF/views/flows/main/form.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+    </definition>
+    
+    <definition name="actualizar" template="/WEB-INF/views/flows/main/actualizar.jsp">
+    	<put-attribute name="form" value="/WEB-INF/views/flows/main/form.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
     </definition>
     
 

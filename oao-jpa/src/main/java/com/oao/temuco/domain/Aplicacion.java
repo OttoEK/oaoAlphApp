@@ -22,7 +22,7 @@ public class Aplicacion implements Serializable {
 	@SequenceGenerator(name="APLICACION_NIDAPLICACION_GENERATOR",sequenceName = "APLICACION_SEQ" )
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APLICACION_NIDAPLICACION_GENERATOR")
 	@Column(name="N_ID_APLICACION")
-	private long nIdAplicacion;
+	private Integer nIdAplicacion;
 
 	@Column(name="B_ACTIVO")
 	private BigDecimal bActivo;
@@ -50,11 +50,11 @@ public class Aplicacion implements Serializable {
 	public Aplicacion() {
 	}
 
-	public long getnIdAplicacion() {
+	public Integer getnIdAplicacion() {
 		return nIdAplicacion;
 	}
 
-	public void setnIdAplicacion(long nIdAplicacion) {
+	public void setnIdAplicacion(Integer nIdAplicacion) {
 		this.nIdAplicacion = nIdAplicacion;
 	}
 
