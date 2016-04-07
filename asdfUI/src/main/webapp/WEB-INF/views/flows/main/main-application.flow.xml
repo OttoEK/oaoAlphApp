@@ -28,7 +28,8 @@
     </view-state>
     
     <action-state id="borrarAction">
-    
+        <evaluate expression="mainAction.aplicacionBorrar(requestParameters.naplicacion)"/>
+    	<!-- <transition on="listar" to="borrarAction"/> -->
     	<transition to="listar"/>
     </action-state>
     

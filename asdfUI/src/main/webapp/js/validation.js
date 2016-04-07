@@ -38,3 +38,15 @@ $(document).ready(function() {
 		});
 	})	
 });
+
+//esto no deberia estar aquí pronto lo cambio.
+
+$('button.btn-borrar').on('click',function(event){
+	$.ajax({
+		url: $(this).attr('href')
+
+	}).done(function(){
+		window.location.href = "/oaoui/listar";
+	})
+	event.preventDefault()
+	})

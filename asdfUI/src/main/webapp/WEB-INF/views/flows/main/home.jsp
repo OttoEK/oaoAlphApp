@@ -11,7 +11,7 @@
 <tiles:insertAttribute name="header"/>   
    	
 
-        <h1>Cusos oao</h1>
+        <h1>Cursos oao</h1>
         <p class="lead">Agregar informacion del curso</p>
 
 

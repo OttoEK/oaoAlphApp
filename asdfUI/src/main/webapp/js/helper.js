@@ -73,3 +73,4 @@ $.fn.AjaxFormSubmit = function (params, renderer) {
     
     $.ajax(settings);
 };
+

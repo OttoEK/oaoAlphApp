@@ -34,7 +34,7 @@
 					<td>${aplicacionvar.sTituloVentana}</td>
 					<td>${aplicacionvar.bActivo}</td>
 					<td>
-						<button data-oao-action="submit" class="btn btn-default" href="${flowExecutionUrl}&_eventId=borrar&naplicacion=${aplicacionvar.nIdAplicacion}">Borrar</button>
+						<button data-oao-action="submit" class="btn btn-default btn-borrar" href="${flowExecutionUrl}&_eventId=borrar&naplicacion=${aplicacionvar.nIdAplicacion}">Borrar</button>
 						<button data-oao-action="submit" class="btn btn-primary" href="${flowExecutionUrl}&_eventId=actualizar&naplicacion=${aplicacionvar.nIdAplicacion}">Actualizar</button>					
 					</td>
 				</tr>

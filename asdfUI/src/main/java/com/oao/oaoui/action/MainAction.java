@@ -29,7 +29,7 @@ public class MainAction extends AbstractAction {
 	private static final Logger LOG = LoggerFactory.getLogger(MainAction.class);
 
 	public ListAplicacion aplicacionListar() throws JsonParseException, JsonMappingException, IOException {
-		String jsonInString = postrest("http://localhost:8082/cursoao-web-il/aplicacion/listar", "" );
+		String jsonInString = postrest("http://localhost:8081/cursoao-web-il/aplicacion/listar", "" );
 		Set<Aplicacion2> aplicaciones = jsonToPojoList(new TypeReference<Set<Aplicacion2>>() {}, jsonInString);
 		List<Aplicacion2> arraylist= new ArrayList<Aplicacion2>();
 		
@@ -52,8 +52,16 @@ public class MainAction extends AbstractAction {
 		
 		String input = pojoToJson(aplicacion2);
 		
-		String jsonInString = postrest("http://localhost:8082/cursoao-web-il/aplicacion/nueva",input  );
+		String jsonInString = postrest("http://localhost:8081/cursoao-web-il/aplicacion/nueva",input  );
 		
+		return jsonInString;
+	}
+	
+	public String aplicacionBorrar(String nIdAplicacion) throws JsonParseException, JsonMappingException, IOException {
+		Aplicacion2 aplicacion2 = new Aplicacion2();
+		aplicacion2.setnIdAplicacion(Integer.valueOf(nIdAplicacion));
+		String input = pojoToJson(aplicacion2);
+		String jsonInString = postrest("http://localhost:8081/cursoao-web-il/aplicacion/borrar", input);
 		return jsonInString;
 	}
 
