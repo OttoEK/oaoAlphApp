@@ -22,7 +22,7 @@ import org.springframework.web.context.request.SessionScope;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+	//comentario
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
