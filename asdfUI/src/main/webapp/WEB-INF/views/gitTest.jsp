@@ -17,7 +17,11 @@
 	
 	<h3>Cuarta prueba...</h3>
 	<h2>Cuarta Otto :D prueba...</h2>
+<<<<<<< HEAD
 	
 	<h3>Quinta prueba...</h3>
+=======
+	<h3>Quinta prueba :) ...</h3>
+>>>>>>> branch 'master' of https://github.com/OttoEK/oaoAlphApp
 </body>
 </html>
