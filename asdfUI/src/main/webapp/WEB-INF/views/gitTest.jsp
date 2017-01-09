@@ -23,5 +23,7 @@
 	<h2>Prueba Pull</h2>
 	
 	<h2>Prueba del nuevo branch</h2>
+	
+	<h2>Prueba desde master</h2>
 </body>
 </html>
